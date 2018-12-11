@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="predator.app.MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/trex1"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:contentDescription="dinosaur"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btngear"
+        android:src="@drawable/orangegear"
+        android:maxHeight="50dp"
+        android:maxWidth="50dp"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:layout_above="@+id/btnplay"
+        android:layout_toLeftOf="@+id/titlepred" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PLAY"
+        android:id="@+id/btnplay"
+        android:background="@null"
+        android:textColor="#ff9c2d"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="onPlay" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnsnd"
+        android:src="@drawable/orangemute"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:maxHeight="50dp"
+        android:maxWidth="50dp"
+        android:layout_above="@+id/btnplay"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_marginLeft="73dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="PREDATOR"
+        android:id="@+id/titlepred"
+        android:textColor="#ff891c"
+        android:textSize="60dp"
+        android:textStyle="bold|italic"
+        android:typeface="serif"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+   <!-- <menu xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <group android:id="@+id/group_popupmenu">
+            <item android:id="@+id/menu1"
+                android:title="Popup menu item 1"/>
+            <item android:id="@+id/menu2"
+                android:title="Popup menu item 2"/>
+            <item android:id="@+id/menu3"
+                android:title="Popup menu item 3"/>
+        </group>
+    </menu> -->
+
+
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">predator</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_popupactivity">popupactivity</string>
+    <string name="title_activity_mapa">mapa</string>
+    <string name="title_activity_map1">map1</string>
+    <string name="title_activity_map2">map2</string>
+    <string name="title_activity_map3">map3</string>
+    <string name="title_activity_map4">map4</string>
+    <string name="title_activity_map5">map5</string>
+    <string name="title_activity_lvl1world1">lvl1world1</string>
+
+</resources>

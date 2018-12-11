@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+<item
+    android:id="@+id/msc"
+    android:title="Música"/>
+
+<item
+    android:id="@+id/effcts"
+    android:title="Efectos"/>
+
+<item
+    android:id="@+id/info"
+    android:title="Información"/>
+
+</menu>

@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="predator.app.map1">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="World 1"
+        android:id="@+id/ttlemap1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="187dp"
+        android:textColor="#f5e55c"
+        android:textSize="60dp" />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnbckmp"
+        android:src="@drawable/left"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:maxHeight="50dp"
+        android:maxWidth="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="toGeneralMap" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnstrmp1"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:background="@null"
+
+        android:src="@drawable/tienda"
+        android:maxHeight="50dp"
+        android:maxWidth="50dp"
+        android:layout_alignTop="@+id/btnbckmp"
+        android:layout_toRightOf="@+id/btnbckmp"
+        android:layout_marginLeft="35dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lvl1mp1"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:maxWidth="150dp"
+        android:maxHeight="150dp"
+        android:background="#f7ff11"
+        android:minHeight="150dp"
+        android:minWidth="150dp"
+        android:layout_below="@+id/ttlemap1"
+        android:layout_toRightOf="@+id/btnbckmp"
+        android:longClickable="false"
+        android:onClick="tolvl1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="1"
+        android:id="@+id/textView"
+        android:textSize="100dp"
+        android:layout_below="@+id/ttlemap1"
+        android:layout_alignLeft="@+id/btnstrmp1"
+        android:layout_alignStart="@+id/btnstrmp1"
+        android:layout_marginLeft="19dp" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar"
+        android:layout_alignBottom="@+id/lvl1mp1"
+        android:layout_alignLeft="@+id/lvl1mp1"
+        android:layout_alignStart="@+id/lvl1mp1"
+        android:layout_alignRight="@+id/lvl1mp1"
+        android:layout_alignEnd="@+id/lvl1mp1" />
+
+</RelativeLayout>
